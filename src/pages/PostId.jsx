@@ -17,10 +17,10 @@ function PostId() {
   }
 
   return (
-    <>
+    <div>
       <h2>{postDetail?.title}</h2>
       <p>{postDetail?.body}</p>
-    </>
+    </div>
   );
 }
 
