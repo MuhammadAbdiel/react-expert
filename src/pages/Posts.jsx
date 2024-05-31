@@ -1,10 +1,11 @@
 import { useSelector, useDispatch } from "react-redux";
-import { asyncReceivePosts } from "../states/posts/action";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { asyncReceivePosts } from "../states/posts/postsSlice";
+// import { asyncReceivePosts } from "../states/posts/action";
 
 function Posts() {
-  const posts = useSelector((states) => states.posts);
+  const { posts } = useSelector((state) => state.posts);
 
   const dispatch = useDispatch();
 
