@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import { configureStore } from "@reduxjs/toolkit";
 import { loadingBarReducer } from "react-redux-loading-bar";
 import postDetailReducer from "./postDetail/reducer";

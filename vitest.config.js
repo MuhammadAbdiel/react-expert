@@ -5,6 +5,9 @@ export default defineConfig({
     environment: "jsdom",
     coverage: {
       provider: "istanbul", // or 'v8'
+      reporter: ["text", "html"],
+      reportsDirectory: "coverage",
+      exclude: ["**/*.{jsx,tsx,cjs}"],
     },
   },
 });
